@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wdth,wght@0,82.1,264;1,82.1,264&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "poppins", sans-serif;
+}
+
+
+
+.main-header{
+    background-color: rgb(255, 255, 255);
+    margin: 15px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 50px;
+    width: 85%;
+    height: 10%;
+    margin-left: 100px;
+    margin-right: 100px;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: fixed;
+    z-index: 1;
+}
+
+.hamburger-menu{
+        display:none;
+}
+
+
+
+img{
+    width: 180px;
+}
+
+nav ul{
+    display: flex;
+    gap: 40px;
+    list-style-type: none;
+    margin-right: 30px;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+
+}
+
+
+a{
+    text-decoration: none;
+    color: rgb(141, 141, 141);
+    
+}
+
+
+a:hover{
+    color: rgba(20, 127, 225, 1);
+}
+
+#nav-contact{
+    padding: 20px;
+    border-radius: 50px;
+    background-color: rgba(244, 204, 72, 1);
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    justify-self: flex-end;
+    
+}
+
+#detail-image{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+}
+
+.detail{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 7%;
+    font-size: 0.7rem;
+
+}
+
+#detail-image img{
+    width: 80%;
+    height: 80%;
+    margin-top: 20px;
+    align-self: center;
+}
+
+/* .client{
+        font-size: 0.6rem;
+        margin-top: 0;
+
+    } */
+
+#detail-content{
+    display: flex;
+    flex-direction: column;
+    /* width: auto; */
+    height: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+}
+
+.list-content{
+    margin-left: 40px;
+}
+
+span{
+    margin-right: 40px;
+}
+
+.project{
+    width: 40%;
+    height: 70% ;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 5px 10px 0px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.project span{
+    padding: 5px;
+    border: 1px solid rgb(0, 166, 255);
+    border-radius: 20px;
+    background-color:  rgb(236, 249, 255);
+    font-size: 0.8rem;
+}
+
+
+
+.project-content h1{
+    font-size: 0.9rem;
+}
+
+.project .project-img{
+    width: 100%;
+    height: 70%;
+    margin-bottom: 10px
+}
+
+.project h5{
+    font-weight: 300;
+}
+
+#detail-content h1{
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+}
+
+/* footer  */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    height: 80vh;
+    width: 100vw;
+    justify-content: space-between;
+    font-family: "poppins", sans-serif;
+}
+
+.footer-box1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding-left: 50px;
+}
+
+.footer-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    padding-right: 10%;
+    width: 40%;
+    gap: 30px;
+    
+}
+
+.footer-links ul{
+    list-style: none;
+    margin-left: -40px;
+    font-size: 13px;
+}
+
+
+
+.footer-box2{
+    text-align: center;
+}
+
+.footer-box2 h1{
+    font-size: 10rem;
+    margin: 10px;
+    color: rgb(220, 220, 220);
+}
+
+.footer-box2 p{
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.line{
+    width: 80%;
+    height: 2px;
+    margin-top: 30px;
+    justify-content: center;
+    color: #d6d6d6;
+}
+
+.footer-icons{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    margin: 15px;
+}
+
+.footer-icons img{
+width: 20px;
+}
+
+@media (max-width: 1313px) {
+
+.hamburger-menu{
+    display: content;
+    display: flex;
+    flex-direction: column;
+    height: 40px;
+    width:40px;
+    margin-top: 15px;
+}
+
+
+    nav ul{
+    display: none;
+
+    }
+
+    #nav-contact{
+        display: none;
+    }
+
+
+    h1{
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+    }
+    .whySeasalus{
+        flex-direction: column;
+        position: relative;
+    }
+
+
+
+    .main-header{
+    
+    width: 90vw;
+    height: 1.7%;
+    margin-left: 20px;
+    padding: 30px;
+    
+    }
+
+
+    .banner-content h1{
+        font-size: 2.5rem;
+    }
+
+
+
+    #detail-image{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    
+
+    }
+
+    .project{
+    width: 90%;
+    height: 70% ;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 5px 10px 0px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+    .project h1{
+        line-height: 1.2rem;
+        margin: 0;
+    }
+
+    .detail{
+
+    margin-top: 25%;
+    font-size: 0.4rem;
+
+}
+    /* footer */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    height: 90vh;
+    width: 100vw;
+    
+    justify-content: space-between;
+    font-family: "poppins", sans-serif;
+}
+
+.footer-box1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+.footer-box1 h2{
+    margin: 0;
+    
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 0;
+}
+
+.footer-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    padding-right: 5%;
+    width: 100%;
+    gap: 30px;
+    
+}
+
+.footer-links ul{
+    list-style: none;
+    margin-left: -40px;
+    font-size: 13px;
+}
+
+
+
+.footer-box2{
+    text-align: center;
+    gap: 20px;
+    width: 90%;
+}
+
+.footer-box2 h1{
+    font-size: 4rem;
+    margin: 10px;
+    color: rgb(220, 220, 220);
+}
+
+.footer-box2 p{
+    margin-top: 50px;
+    padding: 0;
+}
+
+.line{
+    width: 80%;
+    height: 2px;
+    margin-top: 30px;
+    justify-content: center;
+    color: #d6d6d6;
+}
+}
