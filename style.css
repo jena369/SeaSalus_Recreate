@@ -1,0 +1,955 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wdth,wght@0,82.1,264;1,82.1,264&display=swap');
+
+
+*{
+    box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+
+
+.main-header{
+    background-color: rgb(255, 255, 255);
+    margin: 15px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 50px;
+    width: 90%;
+    height: 10%;
+    margin-left: 100px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: fixed;
+    z-index: 1;
+}
+
+.hamburger-menu{
+        display:none;
+}
+
+
+
+img{
+    width: 180px;
+}
+
+nav ul{
+    display: flex;
+    gap: 40px;
+    list-style-type: none;
+    margin-right: 30px;
+    font-size: 14px;
+    font-family: "Poppins", sans-serif;
+
+}
+
+
+a{
+    text-decoration: none;
+    color: rgb(141, 141, 141);
+    
+}
+
+
+a:hover{
+    color: rgba(20, 127, 225, 1);
+}
+
+#nav-contact{
+    padding: 20px;
+    border-radius: 50px;
+    background-color: rgba(244, 204, 72, 1);
+    cursor: pointer;
+    border: none;
+    color: #fff;
+    justify-self: flex-end;
+    
+}
+
+
+#hero{
+    min-height: 100vh;
+    margin-top: 15px;
+    padding-top: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    
+}
+
+#get-started{
+    position: relative;
+    top: -210px;
+    padding: 10px 15px 10px 15px;
+    border-radius: 50px;
+    border: none;
+    background: RGBA(8, 91, 197, 1);
+    background: linear-gradient(90deg, rgba(8, 91, 197, 1) 0%, rgba(30, 169, 255, 1) 99%);
+    color: #fff;
+    cursor: pointer;
+}
+
+
+#hero p{
+    font-size: 11px;
+    position: relative;
+    top: -30px;
+    font-family: "Poppins", sans-serif;
+
+}
+
+#hero h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    text-align: center;
+    line-height: 60px;
+    font-size: 3rem;
+}
+
+ .mobile-break {
+  display: none;
+}
+
+.gradient-text{
+     color: #085AC4; 
+ background-image: linear-gradient(0deg, #085AC4 , #085AC4 50%, #80BBFF 100%); 
+ background-clip: text; 
+ -webkit-background-clip: text; 
+ -webkit-text-fill-color: transparent; 
+ font-weight: 400;
+}
+
+.video{
+    width: 95%;
+    position: relative;
+    top: -30px;
+}
+
+#vision{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100vw;
+    margin:0 5% 0 5%;
+    gap: 30px;
+    font-family: 'poppins', san-serif;
+}
+
+#vision .vision-img{
+    width: 30%;
+  /* max-width: 500px; */
+    max-height: 70%;
+  aspect-ratio: 2 / 2; 
+
+    background: url(images/dot\ texture.svg),
+     linear-gradient(1deg, rgba(8, 91, 197, 1) 0%, rgba(30, 169, 255, 1) 99%);
+    margin-left: 5em;
+    border-radius: 20px;
+    background-size: cover;
+    
+}
+
+#vision .vision-text{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 1.4em;
+    
+}
+
+
+#vision .vision-text h1{
+    line-height: 1.4em;
+    font-family: 'poppins', sans-serif;
+    font-weight: 650;
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 27px;
+}
+
+
+#gradient-vision{
+
+     color: #085AC4; 
+    background-image: linear-gradient(0deg, #085AC4 , #085AC4 50%, #80BBFF 100%); 
+    background-clip: text; 
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
+    font-weight: 600;
+    margin-bottom: -20px;
+    margin-top: 40px;
+
+}
+
+
+#vision .vision-text p{
+    font-size: 15px;
+}
+
+/* services section */
+
+#service{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    max-height: 100%;
+    margin: 30px;
+}
+
+.service-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-text h1, h4, p{
+    margin-bottom: 0.1em;
+    font-family: 'poppins', sans-serif;
+}
+
+.service-text h4{
+    margin-bottom: -1.5em;
+}
+
+.service-text p{
+    margin-top: -0.5em;
+    font-size: 16px;
+}
+
+.service-text h1{
+    font-size: 35px;
+    font-family: 'poppins', sans-serif;
+    font-weight: 600;
+}
+
+
+.card-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 50px;
+    justify-content: left;
+}
+
+.cards{
+    width: 30%;
+    height: 35%;
+    margin: 2em;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.cards .icon-text{
+    display: flex;
+    flex-direction: column;
+    line-height: 1.3rem;
+    margin: 20px;
+    font-family: 'poppins', sans-serif;
+}
+
+.cards .icon-text img{
+    width: 25%;
+    margin-bottom: 20px;
+}
+
+.cards .icon-text h2{
+    font-size: 1.2rem;
+
+}
+
+.cards .icon-text p{
+    font-size: 0.9rem;
+
+}
+
+
+
+.read-more{
+    width: 25%;
+    padding: 8px;
+    border-radius: 20px;
+    color: #085AC4;
+    background-color: #d6e8fc;
+    border: none;
+    align-self: flex-end;
+    margin-right: 20px;
+    margin-bottom: 20px;
+
+}
+
+
+
+.whySeasalus{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    gap: 30px;
+    margin: 30px;
+    align-items: center;
+}
+
+.whyseasalusleft{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: start;
+    min-width: 50%;
+    margin-left: 50px;
+    
+}
+
+.whyseasalusleft h1{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: -0.1em;
+    text-align: left;
+    font-family: "poppins", sans-serif;
+}
+
+#whyseasalusdescription{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.points{
+    width: 90%;
+    height: 9%;
+    background-color: #e9e9e9;
+    margin-top: 15px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: start;
+    padding: 16px;
+    gap: 20px;
+    border-radius: 10px;
+    margin-left: 30px;
+}
+
+
+.pointtext{
+    margin: 0;
+}
+
+.points img{
+    width: 4%;
+    margin-left: 20px;
+}
+
+
+.whyseasalus-img {              /* responsive */
+  width: 35%;
+  /* max-width: 500px; */
+  aspect-ratio: 2 / 2; 
+  background: 
+    url('images/dot texture.svg'),
+    linear-gradient(1deg, rgba(8, 91, 197, 1) 0%, rgba(30, 169, 255, 1) 99%);
+  /* margin: 1em; */
+  border-radius: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
+#testimonial{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(1deg, rgba(8, 91, 197, 1) 0%, rgba(30, 169, 255, 1) 99%); 
+}
+
+#testimonial .testimonial-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    color: #fff;
+    font-family: 'poppins', sans-serif;
+
+}
+
+#testimonial .testimonial-content img{
+    width: 50px;
+    margin-bottom: 30px;
+}
+
+#testimonial .testimonial-content h4{
+    font-weight: 300;
+    margin: 0;
+}
+
+#testimonial .testimonial-content h3{
+    margin: 0;
+    margin-top: 30px;
+}
+
+#testimonial .testimonial-content h2{
+    font-weight: 500;
+    text-align: center;
+}
+
+
+/* BLOG */
+
+#latestblog{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 40px 40px;
+}
+
+#latestblog {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 40px 40px;
+    font-family: "poppins", sans-serif;
+
+}
+
+#latestblog h1{
+    margin: 0;
+    font-weight: 600;
+}
+
+#latestblog .latestblog-btn{
+    display: flex;
+    align-items: center;
+
+}
+
+#latestblog .latestblog-btn button{
+    padding: 15px 30px 15px 30px;
+    border-radius: 230px;
+    border: none;
+    background-color: rgba(244, 204, 72, 1);
+    color: #fff;
+    font-family: "poppins", sans-serif;
+    font-weight: 700;
+    
+}
+
+#build-better{
+   height: 80vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(1deg, rgba(8, 91, 197, 1) 0%, rgba(30, 169, 255, 1) 99%); 
+    border-radius: 20px;
+    font-family: "poppins", sans-serif;
+}
+
+#build-better .build-better-content{
+    width: 60%;
+    text-align: center;
+    color: #fff;
+    
+}
+
+#build-better .build-better-content h2{
+    font-weight: 300;
+    font-size: 20px;
+}
+
+#build-better .build-better-content h1{
+    font-weight: 600;
+    font-size: 36px;
+}
+
+#build-better button{
+    margin-top: 30px;
+    padding: 15px 30px 15px 30px;
+    border-radius: 230px;
+    border: none;
+    background-color: rgba(244, 204, 72, 1);
+    color: #fff;
+    font-family: "poppins", sans-serif;
+    font-weight: 700;
+}
+
+/* footer  */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    height: 80vh;
+    width: 100vw;
+    justify-content: space-between;
+    font-family: "poppins", sans-serif;
+}
+
+.footer-box1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    padding-left: 50px;
+}
+
+.footer-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    padding-right: 10%;
+    width: 40%;
+    gap: 30px;
+    
+}
+
+.footer-links ul{
+    list-style: none;
+    margin-left: -40px;
+    font-size: 13px;
+}
+
+
+
+.footer-box2{
+    text-align: center;
+}
+
+.footer-box2 h1{
+    font-size: 10rem;
+    margin: 10px;
+    color: rgb(220, 220, 220);
+}
+
+.footer-box2 p{
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.line{
+    width: 80%;
+    height: 2px;
+    margin-top: 30px;
+    justify-content: center;
+    color: #d6d6d6;
+}
+
+.footer-icons{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    margin: 15px;
+}
+
+.footer-icons img{
+width: 20px;
+}
+
+@media (max-width: 1252px) {
+
+    nav ul{
+    display: none;
+
+    }
+
+    #nav-contact{
+        display: none;
+    }
+
+
+    #hero h1{
+        font-size: 2.3rem;
+        line-height: 3.5rem;
+    }
+    .whySeasalus{
+        flex-direction: column;
+        position: relative;
+    }
+
+    #hero{
+        padding: 5%;
+        font-size: 10px;
+        margin-top: 10%;
+    }
+
+    .mobile-break {
+    display: inline;
+    }
+
+    #hero p{
+        margin: 40px 30px 30px 30px;
+        text-align: center;
+        
+    }
+
+    #get-started{
+    position: relative;
+    top: -70px;
+    padding: 10px 10px 10px 10px;
+    font-size: 10px;
+    }
+
+
+    .main-header{
+    
+    width: 90vw;
+    height: 1.7%;
+    margin-left: 20px;
+    padding: 30px;
+    
+    }
+
+    #vision{
+        flex-direction: column-reverse;
+    
+        margin-right: 10px;
+        margin-bottom: 50px;
+    }
+
+    #vision .vision-img{
+    width: 90%;
+    height: 45%;
+    /* margin-left: 50px; */
+    border-radius: 20px;
+    background-size: cover;
+    
+    }
+
+    #vision .vision-text{
+    display: flex;
+    flex-direction: column;
+    width: 90%; 
+    /* margin-left: 0; */
+    /* margin-right: 60px;  */
+    /* padding: 0 10px 0 40px; */
+    
+    }
+
+
+
+    #vision .vision-img{
+    width: 90vw;
+    height: 80%;
+    aspect-ratio: 4/2;
+    background: url(images/dot\ texture.svg),
+     linear-gradient(1deg, rgba(8, 91, 197, 1) 0%, rgba(30, 169, 255, 1) 99%);
+    margin-left: 1vw;
+    border-radius: 20px;
+    background-size: cover;
+    
+    }
+
+    #service {
+    display: flex;
+    flex-direction: column;
+    width: 95vw;
+    margin: 30px;
+    margin: 10px;
+    }
+
+    #service .service-text {
+    margin: 0px 30px 0px 30px ;
+    justify-content: left;
+    align-items: flex-start;
+    
+    }
+
+    #service .service-text h1{  /* service section alignment to left */
+        text-align: left;
+        line-height: 2.4rem;
+        font-size: 30px;
+    }
+
+    #service .service-text p{
+        margin-top: 10px;
+        font-size: 15px;
+    }
+
+    .card-container{
+        display:flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin: 0;
+        
+    }
+    .cards{
+ flex-grow: 1;
+ margin-bottom: 20px;
+ min-width: 90%;
+        
+
+
+    }
+
+
+    .cards .icon-text{
+    display: flex;
+    flex-direction: column;
+    line-height: 1.6rem;
+    margin: 20px;
+    font-family: 'poppins', sans-serif;
+    line-height: 2rem;
+}
+
+.cards .icon-text img{
+    width: 25%;
+    margin-bottom: 20px;
+}
+
+.cards .icon-text h2{
+    font-size: 1.7rem;
+
+}
+
+.cards .icon-text p{
+    font-size: 1.1rem;
+    
+}
+
+
+
+.read-more{
+    width: 40%;
+    padding: 15px;
+    border-radius: 20px;
+    color: #085AC4;
+    background-color: #d6e8fc;
+    border: none;
+    align-self: flex-end;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    font-size: 1rem;
+}
+
+.whyseasalusleft{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin: 30px auto;    
+}
+
+.whyseasalusleft h1{
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 1.2em;
+}
+
+.whySeasalus{
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+
+#whyseasalusdescription{
+    font-size: 16px;
+    margin-bottom: 20px;
+    max-width: 500px;
+}
+
+.points{
+    width: 100%;
+    height: 15%;
+    background-color: #e9e9e9;
+    margin-top: 15px;
+    display: inline-flex;
+    align-items: center;
+    flex-grow: 1;
+    justify-content: start;
+    margin-left: 0;
+}
+
+
+.pointtext{
+    margin: 0;
+    font-size: 0.7rem;
+}
+
+.points img{
+    width: 4%;
+    margin-left: 20px;
+}
+
+
+.whyseasalus-img{
+    width: 90%;
+    /* max-width: 500px; */
+    height: 40%;
+    aspect-ratio: 4/2;
+    margin-left: 0;
+    border-radius: 20px;
+    background-size: cover;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    align-self: center;
+}
+
+#latestblog{
+    gap: 20px;
+    flex-direction: column;
+}
+
+#latestblog h1{
+    font-size: 20px;
+    margin-left: 0;
+}
+
+#latestblog p{
+    margin-top: 0;
+}
+
+.latestblogtext{
+    /* align-items: flex-start; */
+    /* justify-content: left; */
+    text-align: left;
+    font-family: "poppins", sans-serif;
+}
+
+
+
+
+#latestblog .latestblog-btn button{
+    padding: 15px 30px 15px 30px;
+    border-radius: 230px;
+    border: none;
+    background-color: rgba(244, 204, 72, 1);
+    color: #fff;
+    font-family: "poppins", sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+
+#build-better .build-better-content h1{
+    font-size: 1.7rem;
+    line-height: 1.6em;
+}
+
+#build-better .build-better-content h2{
+    font-size: 1.1rem
+}
+
+/* testimonial */
+
+#testimonial .testimonial-content{
+    width: 80%;
+
+}
+
+#testimonial .testimonial-content h2{
+    
+    font-size: 1.1rem;
+}
+
+#testimonial .testimonial-content p{
+    margin: 0;
+}
+.hamburger-menu{
+    display: content;
+    display: flex;
+    flex-direction: column;
+    height: 40px;
+    width:40px;
+    margin-top: 15px;
+}
+
+
+/* footer */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    /* margin: 30px; */
+    height: 90vh;
+    width: 100vw;
+    
+    justify-content: space-between;
+    font-family: "poppins", sans-serif;
+}
+
+.footer-box1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+.footer-box1 h2{
+    margin: 0;
+    
+}
+
+.footer-content{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 0;
+}
+
+.footer-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    padding-right: 5%;
+    width: 100%;
+    gap: 30px;
+    
+}
+
+.footer-links ul{
+    list-style: none;
+    margin-left: -40px;
+    font-size: 13px;
+}
+
+
+
+.footer-box2{
+    text-align: center;
+    gap: 20px;
+    width: 90%;
+}
+
+.footer-box2 h1{
+    font-size: 4rem;
+    margin: 10px;
+    color: rgb(220, 220, 220);
+}
+
+.footer-box2 p{
+    margin-top: 50px;
+    padding: 0;
+}
+
+.line{
+    width: 80%;
+    height: 2px;
+    margin-top: 30px;
+    justify-content: center;
+    color: #d6d6d6;
+}
+
+}
